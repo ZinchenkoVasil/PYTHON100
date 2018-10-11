@@ -1,11 +1,9 @@
-def FillList_001():
-    N = 5
+def FillList_001(N):
     lst = list(range((N + 2) * N))
     print(lst)
 
 
-def Duplicate_002():
-    N = 5
+def Duplicate_002(N):
     lst1 = list(range((N + 2) * N))
     lst2 = [number + 1 for number in range((N + 2) * N)]
     lst = lst1 + lst2

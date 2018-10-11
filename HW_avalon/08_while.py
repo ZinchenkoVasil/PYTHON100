@@ -28,25 +28,29 @@ def while_002():
 def while_003():
     d = 1
     dist = 10
+    step = 10
     while d <= 30:
-        dist = dist + dist * 0.15
+        step = step * 1.15
+        dist = dist + step
         d += 1
     print(dist)
 
 def while_004():
     d = 1
-    dist = 10
-    while dist < 100:
-        dist = dist + dist * 0.1
+    step = 10
+    while step <= 20:
+        step = step * 1.1
         d += 1
+    print("спортсмен пробежал больше 20 км в день через: ", d , "дней")
 
-    print("спортсмен пробежал 100 км за: ", d - 1, "дней")
     d = 1
     dist = 10
     step = 10
-    while step < 20:
-        step = dist * 0.1
+    while dist < 100:
+        step = step * 1.1
         dist = dist + step
         d += 1
-    print("спортсмен пробежал 20 км в день через: ", d - 1, "дней")
-#while_004()
+
+    print("спортсмен пробежал 100 км за: ", d, "дней")
+
+#while_003()

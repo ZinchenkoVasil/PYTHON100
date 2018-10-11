@@ -6,7 +6,7 @@ def Dubl_001():
 
 def Steps_002():
     n = int(input("введите число n: "))
-    for i in range(n):
+    for i in range(1, n+1):
         print('=' * i)
 
 def UseDict_003():
@@ -27,12 +27,15 @@ def UseDict_004():
     dict_words = {}
     for word in words:
         if not (word in dict_words):
-            dict_words[word] = len(word)
-
-    print(dict_words)
+            if len(word) in dict_words:
+                dict_words[len(word)] += 1
+            else:
+                dict_words[len(word)] = 1
+    for item in dict_words.items():
+        print("длины - ", item[0] ," ", item[1], " слова")
 
 #Dubl_001()
 #Steps_002()
-#UseDict_004()
+UseDict_004()
 
 
